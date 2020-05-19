@@ -1,0 +1,42 @@
+.success:before {
+    content:'\f00c';
+    padding-right: 5px;
+}
+.info:before {
+    content:"\f05a";
+    padding-right: 5px;
+}
+.warning:before {
+    content:'\f071';
+    padding-right: 5px;
+}
+.error:before {
+    content:'\f057';
+    padding-right: 5px;
+}
+.custom:before{
+    content:'\f075';
+    padding-right: 5px;
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.custom {
+    color: black;
+    background-color: white;
+}

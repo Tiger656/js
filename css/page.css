@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.35em;
+    font-family: 'Nunito', sans-serif;
+    color: #555;
+    background-color: #e8e9e9;
+    
+}
+
+
+.message-container {
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 12px;
+    right: 12px;
+}
+.message {
+    display: none;
+    box-sizing: border-box;
+    color: black;
+    width: 300px;
+    font-size: 0.75em;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    border: 1px solid black; 
+    font-family: FontAwesome;
+}
+
+.message-body {
+    display:inline-block;
+
+}
+.message-close {
+    display: block;
+    float: right;
+   
+}
+
+.message-close img {
+    min-width: 5px;
+    min-height: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}

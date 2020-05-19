@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Flexbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/message.css">
+    <script src="https://use.fontawesome.com/e15f3649ea.js"></script>
+
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    
+    <h1>Toast</h1>
+    <div class="message-container"></div>
+    <b>You can enter your message or html code</b>
+    
+    
+    <input type="text" id="text">
+    <button onclick="creatCustomMessage()">
+        Show custom message
+    </button>
+    <br>
+    <button onclick="createMessage('Warning', 'warning')">
+        Show warning message
+    </button>
+
+    <button onclick="createMessage('Success', 'success')">
+        Show success message
+    </button>
+
+    <button onclick="createMessage('Error', 'error')">
+        Show error message
+    </button>
+
+    <button onclick="createMessage('Info', 'info')">
+        Show info message
+    </button>
+  
+
+    <script src=js/toast.js></script>
+    <script>
+          function creatCustomMessage() {
+              console.log(1);
+            let text = document.getElementById("text").value;
+            createMessage(text, 'custom');
+          }
+    </script>
+
+
+</body>
