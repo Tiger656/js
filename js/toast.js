@@ -1,9 +1,10 @@
 function createMessage(body, type) {
-    var message=document.createElement('div',);
+    let message=document.createElement('div',);
+    let duration=document.getElementById('duration').value * 1000;
     message.setAttribute('class', 'message '+ type)
     
     message.innerHTML=
-                '<div class="message-body">'+body+'</div> \
+                '<div class="message-body"><p>'+body+'</p></div> \
                 <div class="message-close"><img src="https://image.flaticon.com/icons/svg/748/748122.svg"/> </div>'
     
 
@@ -28,7 +29,7 @@ function createMessage(body, type) {
     //show message with animation
     var container = document.body.getElementsByClassName('message-container')[0];    
     container.appendChild(message);
-    $(message).show( "slow" );
+    $(message).show( "fast" );
     
     
     
@@ -44,7 +45,7 @@ function createMessage(body, type) {
           });
 
 
-    }, 15000);
+    }, duration);
   }
  
   
